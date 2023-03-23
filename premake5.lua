@@ -9,4 +9,4 @@ project "imgui"
 
    files {"src/**.cpp", "include/**.h"}
 
-   includedirs {"../**/include", "/opt/homebrew/Cellar/sfml/2.5.1_2/include"}
+   includedirs "../**/include"
