@@ -13,6 +13,7 @@ examples/*/Debug/*
 examples/*/Release/*
 examples/*/x64/*
 **/Makefile
+bin/
 
 ## Visual Studio artifacts
 .vs
