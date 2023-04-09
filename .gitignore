@@ -38,6 +38,10 @@ JSON/
 project.xcworkspace
 xcuserdata
 
+## VS artifacts
+*.sln
+**.vcxproj*
+
 ## Emscripten artifacts
 examples/*.o.tmp
 examples/*.out.js
