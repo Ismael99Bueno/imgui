@@ -1,14 +1,15 @@
 project "imgui"
 language "C++"
 cppdialect "C++17"
+
 filter "system:macosx"
-buildoptions {
-   "-Wall",
-   "-Wextra",
-   "-Wpedantic",
-   "-Wconversion",
-   "-Wno-unused-parameter"
-}
+   buildoptions {
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-Wconversion",
+      "-Wno-unused-parameter"
+   }
 filter {}
 
 staticruntime "off"
@@ -22,4 +23,4 @@ files {
    "include/**.h"
 }
 
-includedirs "../**/include"
+includedirs "include"
