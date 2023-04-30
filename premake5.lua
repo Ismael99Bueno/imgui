@@ -1,16 +1,25 @@
 project "imgui"
-   language "C++"
-   cppdialect "C++17"
-   filter "system:macosx"
-      buildoptions {"-Wall", "-Wextra", "-Wpedantic", "-Wconversion", "-Wno-unused-parameter"}
-   filter{}
-   
-   staticruntime "off"
-   kind "StaticLib"
+language "C++"
+cppdialect "C++17"
+filter "system:macosx"
+buildoptions {
+   "-Wall",
+   "-Wextra",
+   "-Wpedantic",
+   "-Wconversion",
+   "-Wno-unused-parameter"
+}
+filter {}
 
-   targetdir("bin/" .. outputdir)
-   objdir("build/" .. outputdir)
+staticruntime "off"
+kind "StaticLib"
 
-   files {"src/**.cpp", "include/**.h"}
+targetdir("bin/" .. outputdir)
+objdir("build/" .. outputdir)
 
-   includedirs "../**/include"
+files {
+   "src/**.cpp",
+   "include/**.h"
+}
+
+includedirs "../**/include"
