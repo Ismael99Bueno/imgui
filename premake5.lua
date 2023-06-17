@@ -18,8 +18,8 @@ targetdir("bin/" .. outputdir)
 objdir("build/" .. outputdir)
 
 files {
-   "**.cpp",
-   "**.h",
+   "./*.cpp",
+   "./*.h",
    "backends/imgui_impl_glfw.cpp",
    "backends/imgui_impl_glfw.h",
    "backends/imgui_impl_vulkan.cpp",
