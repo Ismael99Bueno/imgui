@@ -12,6 +12,8 @@ examples/build/*
 examples/*/Debug/*
 examples/*/Release/*
 examples/*/x64/*
+**/Makefile
+bin/
 
 ## Visual Studio artifacts
 .vs
@@ -35,6 +37,10 @@ JSON/
 ## Xcode artifacts
 project.xcworkspace
 xcuserdata
+
+## VS artifacts
+*.sln
+**.vcxproj*
 
 ## Emscripten artifacts
 examples/*.o.tmp
