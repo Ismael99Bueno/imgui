@@ -18,8 +18,8 @@ targetdir("bin/" .. outputdir)
 objdir("build/" .. outputdir)
 
 files {
-   "src/**.cpp",
-   "include/**.h",
+   "**.cpp",
+   "**.h",
    "backends/imgui_impl_glfw.cpp",
    "backends/imgui_impl_glfw.h",
    "backends/imgui_impl_vulkan.cpp",
@@ -27,7 +27,7 @@ files {
 }
 
 includedirs {
-   "include",
+   ".",
    "backends",
    "%{wks.location}/vendor/glfw/include"
 }
