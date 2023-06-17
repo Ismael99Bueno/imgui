@@ -7,7 +7,6 @@ filter "system:macosx"
       "-Wall",
       "-Wextra",
       "-Wpedantic",
-      "-Wconversion",
       "-Wno-unused-parameter"
    }
 filter {}
@@ -20,7 +19,15 @@ objdir("build/" .. outputdir)
 
 files {
    "src/**.cpp",
-   "include/**.h"
+   "include/**.h",
+   "backends/imgui_impl_glfw.cpp",
+   "backends/imgui_impl_glfw.h",
+   "backends/imgui_impl_vulkan.cpp",
+   "backends/imgui_impl_vulkan.h"
 }
 
-includedirs "include"
+includedirs {
+   "include",
+   "backends",
+   "%{wks.location}/vendor/glfw/include"
+}
