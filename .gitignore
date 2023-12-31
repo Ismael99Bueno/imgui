@@ -21,6 +21,7 @@ ipch
 *.opensdf
 *.log
 *.pdb
+*.pdb
 *.ilk
 *.user
 *.sdf
