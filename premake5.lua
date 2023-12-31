@@ -32,4 +32,4 @@ includedirs {
    "%{wks.location}/vendor/glfw/include"
 }
 filter "system:windows"
-   includedirs "%{VULKAN_SDK}/include"
+   includedirs "%{VULKAN_SDK}/Include"
