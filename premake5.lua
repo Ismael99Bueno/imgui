@@ -31,5 +31,6 @@ includedirs {
    "backends",
    "%{wks.location}/vendor/glfw/include"
 }
+VULKAN_SDK = os.getenv("VULKAN_SDK")
 filter "system:windows"
    includedirs "%{VULKAN_SDK}/Include"
